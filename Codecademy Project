@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CSS Display & Positioning</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./resources/css/styles.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1>CSS Display & Positioning Reference</h1>
+        <h2>Display</h2>
+          <table>
+              <thead class="display">
+                <th>Property</th>
+                <th>Value(s)</th>
+                <th>Description</th>
+                <th>Example</th>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td><span>display</span></td>
+                      <td>block</td>
+                      <td><span>Block</span> elements-take up full width of their container with line breaks before and after & their height/width can be manually adjusted.</td>
+                      <td>.boxes {display: block;}</td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td>inline</td>
+                      <td><span>Inline</span> elements take up as little space as possible, flow horizontally, and cannot have their width/height adjusted.</td>
+                      <td>.boxes {display: inline;}</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>inline-block</td>
+                    <td><span>Inline-block</span> elements can appear next to each other and can have their width/height manually adjusted.</td>
+                    <td>.boxes {display: inline-block;}</td>
+                </tr>
+                  <tr>
+                      <td><span>z-index</span></td>
+                      <td>This property uses integer values, which can be positive or negative values. The element with the highest z-index value will be at the foreground, while the element with the lowest z-index will be at the back.</td>
+                      <td><span>z-index</span> property specifies how far back or how far forward an element will appear on a web page when it overlaps other elements.</td>
+                      <td>.cattle {position: absolute; z-index: 1;}</td>
+                  </tr>
+              </tbody>
+          </table>  
+        <h2>Positioning</h2>
+        <table>
+            <thead class="positioning">
+                <th>Property</th>
+                <th>Value(s)</th>
+                <th>Description</th>
+                <th>Example</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span>position</span></td>
+                    <td>fixed</td>
+                    <td>When the CSS position has a value of <span>fixed</span> it is set or pinned to a specific spot on the page, which means the fixed element stays the same even when scrolling.</td>
+                    <td>navbar {position: fixed;}, </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>absolute</td>
+                    <td>The <span>absolute</span> value for position enables an element to ignore sibling elements and be positioned relative to its closest parent element that's positioned relative or absolute. This value removes an element entirely from the document flow. The following attributes can be used to position an element anywhere as expected: top, left, right, bottom.</td>
+                    <td>.colors {position: absolute;}</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>relative</td>
+                    <td>The value <span>relative</span> enables an element to be positioned relative to where it would have originally been on a webpage. The offset properties can be used to determine the actual position of the element relative to its original position. </td>
+                    <td>.colors {position: relative;}</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>static</td>
+                    <td>Without the offset properties, this declaration will have no effect on its relative positioning, therefore it will act as the default value of <span>static</span> of the position property.</td>
+                    <td>.colors {position: static;}</td>
+                </tr>
+                <tr>
+                    <td><span>float</span></td>
+                    <td></td>
+                    <td>This property determines how far right or left an element should <span>float</span> within its parent element.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>right</td>
+                    <td>The <span>right</span> value floats an element to the right side of its container.</td>
+                    <td>.mugs {float: right;}</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>left</td>
+                    <td>The <span>left</span> value floats an element to the left side of its container.</td>
+                    <td>.mugs {float: left;}</td>
+                </tr>
+                <tr>
+                    <td><span>clear</span></td>
+                    <td></td>
+                    <td>The <span>clear</span> property specifies how an element should behave if and when it bumps into another element within the same containing element.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>right</td>
+                    <td>This ensures that no other elements within the same containing element are allowed to float on the <span>right</span> side of this element.</td>
+                    <td>.pool {clear: right;}</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>left</td>
+                    <td>This ensures that no other elements within the same containing element are allowed to float on the <span>left</span> side of this element.</td>
+                    <td>.pool {clear: left;}</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>both</td>
+                    <td> <span>Both</span> ensures that no elements within the same containing element are allowed to float on either side of this element.</td>
+                    <td>.pool {clear: both;}</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>none</td>
+                    <td> <span>None</span> ensures that other elements within the same containing element are allowed to float on both sides of this element.</td>
+                    <td>.pool {clear: none;}</td>
+                </tr>
+            </tbody>
+        </table>
+        <script src="" async defer></script>
+    </body>
+</html>
+
+h1 {
+    font-family: monospace;
+    text-align: center;
+    color: darkblue;
+}
+
+h2 {
+    color: royalblue;
+    text-align: center;
+}
+
+body {
+    background-color: gainsboro;
+    font-family: monospace;
+}
+
+span {
+    font-weight: bold;
+    color:darkblue;
+}
+
+.display {
+    background-color: cornflowerblue;
+    color: cornsilk;
+    font-family: monospace;
+    font-size: medium;
+    
+}
+
+.positioning {
+    background-color: cornflowerblue;
+    color: cornsilk;
+    font-family: monospace;
+    font-size: medium;
+}
+
+
+
